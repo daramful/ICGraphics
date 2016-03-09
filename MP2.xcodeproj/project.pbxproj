@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		757F471E1C7BA9E2008B3C33 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757F471D1C7BA9E2008B3C33 /* main.cpp */; };
+		757F47251C7BA9EF008B3C33 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757F47241C7BA9EF008B3C33 /* OpenGL.framework */; };
+		757F47271C7BA9F3008B3C33 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757F47261C7BA9F3008B3C33 /* GLUT.framework */; };
+		757F47291C7BA9F6008B3C33 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757F47281C7BA9F6008B3C33 /* Cocoa.framework */; };
+		75DBA2E31C8E3502009534FD /*  main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75DBA2E21C8E3502009534FD /*  main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,14 @@
 
 /* Begin PBXFileReference section */
 		757F471A1C7BA9E2008B3C33 /* MP2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MP2; sourceTree = BUILT_PRODUCTS_DIR; };
-		757F471D1C7BA9E2008B3C33 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		757F47241C7BA9EF008B3C33 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		757F47261C7BA9F3008B3C33 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		757F47281C7BA9F6008B3C33 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		75DBA2E21C8E3502009534FD /*  main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = " main.cpp"; sourceTree = "<group>"; };
+		75DBA2E41C8E352B009534FD /* airplane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airplane.h; sourceTree = "<group>"; };
+		75DBA2E61C8EDCAB009534FD /* keyboards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keyboards.h; sourceTree = "<group>"; };
+		75DBA2E91C8EED8E009534FD /* mountain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mountain.h; sourceTree = "<group>"; };
+		75DBA3011C8F28F6009534FD /* rendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rendering.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757F47291C7BA9F6008B3C33 /* Cocoa.framework in Frameworks */,
+				757F47271C7BA9F3008B3C33 /* GLUT.framework in Frameworks */,
+				757F47251C7BA9EF008B3C33 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +54,9 @@
 		757F47111C7BA9E2008B3C33 = {
 			isa = PBXGroup;
 			children = (
+				757F47281C7BA9F6008B3C33 /* Cocoa.framework */,
+				757F47261C7BA9F3008B3C33 /* GLUT.framework */,
+				757F47241C7BA9EF008B3C33 /* OpenGL.framework */,
 				757F471C1C7BA9E2008B3C33 /* MP2 */,
 				757F471B1C7BA9E2008B3C33 /* Products */,
 			);
@@ -57,7 +73,11 @@
 		757F471C1C7BA9E2008B3C33 /* MP2 */ = {
 			isa = PBXGroup;
 			children = (
-				757F471D1C7BA9E2008B3C33 /* main.cpp */,
+				75DBA2E21C8E3502009534FD /*  main.cpp */,
+				75DBA2E91C8EED8E009534FD /* mountain.h */,
+				75DBA2E61C8EDCAB009534FD /* keyboards.h */,
+				75DBA2E41C8E352B009534FD /* airplane.h */,
+				75DBA3011C8F28F6009534FD /* rendering.h */,
 			);
 			path = MP2;
 			sourceTree = "<group>";
@@ -118,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				757F471E1C7BA9E2008B3C33 /* main.cpp in Sources */,
+				75DBA2E31C8E3502009534FD /*  main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +252,7 @@
 				757F47231C7BA9E2008B3C33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
